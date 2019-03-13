@@ -33,7 +33,7 @@ A ideia é imaginar que somos do time de escrituração e esse monolito vai ser 
 
 **Arquitetura do sistema**
 
-![Alt text](monolito.svg?raw=true "Arquitetura")
+![Alt text](./monolito.svg)
 
 - O Front obtém os dados via API
 - O Service de escrituração tem acesso direto ao Service de Notas
@@ -46,7 +46,7 @@ A ideia é imaginar que somos do time de escrituração e esse monolito vai ser 
 
 **Arquitetura do sistema**
 
-![Alt text](micro_servicos_sem_simulador.svg?raw=true "Arquitetura")
+![Alt text](./micro_servicos_sem_simulador.svg)
 
 **Vantagens:**
 
@@ -58,7 +58,7 @@ A ideia é imaginar que somos do time de escrituração e esse monolito vai ser 
 
 - O serviço de notas pode se tornar complexo e passar a ter outros serviços como dependência.
 
-![Alt text](micro_servicos_sem_simulador_evolucao.svg?raw=true "Arquitetura")
+![Alt text](./micro_servicos_sem_simulador_evolucao.svg)
 
 - Se criarmos outro serviço que deve ser escriturado, por exemplo impostos, mais um serviço a ser levantado para testar/executar a escrituração.
 
