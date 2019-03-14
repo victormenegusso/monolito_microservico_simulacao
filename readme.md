@@ -5,7 +5,7 @@
 ## Objetivos
 
 - Mostrar as vantagens e desvantagens de simular micro serviços
-- Mostrar uma forma de simular micro serviços
+- Mostrar uma forma de simular micro serviços com o [MockServer](http://www.mock-server.com/)
 
 ## Contexto 
 
@@ -16,11 +16,12 @@ Será utilizado como exemplo, um sistema monolítico de Contabilidade que possui
 
 Na parte de notas, basicamente existe um crud para cadastro das notas do cliente. Apresentando uma API e uma Service.
 
-Na parte de escrituração temos um processo de escrituração de notas e listagem dos lançamentos contábeis,
-**Processo de escrituração de notas**
-> Para cada nota são criados 1 ou mais lançamentos contábeis
+Na parte de escrituração temos um processo de escrituração de notas e listagem dos lançamentos contábeis.
 
-### Exercício
+**Processo de escrituração de notas**
+> A escrituração é o processo que transforma uma informação em um lançamento contábil. Para cada nota são criados 1 ou mais lançamentos contábeis
+
+## Exercício
 A ideia é imaginar que somos do time de escrituração e esse monolito vai ser transformado em micro serviços.
 
 - Como vamos executar o nosso serviço?
