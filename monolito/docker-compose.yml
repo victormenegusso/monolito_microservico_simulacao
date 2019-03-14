@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  db:
+    image: mongo:3.4
+  backend:
+    image: node:8.1
+    volumes:
+      - ./backend:/backend
+    ports:
+      - 7070:7070
+    command: bash -c "cd /backend && npm i && npm start"
