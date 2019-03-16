@@ -1,0 +1,19 @@
+version: '3.5'
+
+networks:
+  network_contabilidade_exemplo:
+    external: true
+
+services:
+  db:
+    image: mongo:3.4
+  notas-backend:
+    image: node:8.1
+    volumes:
+      - ./src:/backend
+    ports:
+      - 7171:7171
+    command: bash -c "cd /backend && npm i && npm start"
+    networks:
+      - default
+      - network_contabilidade_exemplo
