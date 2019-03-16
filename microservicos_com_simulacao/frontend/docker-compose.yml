@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  frontend:
+    image: nginx:1.13
+    volumes:
+      - ./src:/usr/share/nginx/html/
+    ports:
+      - 7272:80
