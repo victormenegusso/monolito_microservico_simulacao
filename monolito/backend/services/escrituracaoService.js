@@ -12,8 +12,13 @@ const LancamentoContabil = mongoose.model('LancamentoContabil', {
   valor: { type: Number, required: true },
 })
 
-const escriturar = (cnpj) => {
+const escriturar = async (cnpj) => {
 
+  // remove os lançamentos antigos
+  const lancamentos = await listByCnpj(cnpj)
+  lancamentos.map( lc => lc.remove())
+
+  // escritura as notas
   return notasService.listByCnpj(cnpj).then(notas => {
     notas.map(nota => {
       const LancamentoContabilModel = new LancamentoContabil({
@@ -32,7 +37,7 @@ const list = () => {
   return LancamentoContabilModel.find().then((lancamentoContabil) => lancamentoContabil)
 }
 
-const listByCnpj = (cnpj) => {
+const listByCnpj = cnpj => {
   const LancamentoContabilModel = mongoose.model('LancamentoContabil')
   return LancamentoContabilModel.find({cnpj}).then((lancamentoContabil) => lancamentoContabil)
 }

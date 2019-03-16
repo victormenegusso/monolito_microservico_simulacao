@@ -20,13 +20,19 @@ const list = () => {
   return notaModel.find().then((nota) => nota)
 }
 
-const listByCnpj = (cnpj) => {
+const listByCnpj = cnpj => {
   const notaModel = mongoose.model('Nota')
   return notaModel.find({cnpj}).then((nota) => nota)
+}
+
+const remove = id => {
+  const notaModel = mongoose.model('Nota')
+  notaModel.remove({ _id: id }).then((nota) => nota)
 }
 
 module.exports = {
   registrar,
   list,
   listByCnpj,
+  remove,
 }

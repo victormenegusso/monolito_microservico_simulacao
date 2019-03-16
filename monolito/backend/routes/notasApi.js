@@ -20,4 +20,10 @@ router.post('/', async (req, res) => {
   res.send('ok')
 })
 
+router.delete('/:_id', async (req, res) => {
+  const { _id } = req.params
+  service.remove(_id)
+  res.send('ok')
+})
+
 module.exports = router
