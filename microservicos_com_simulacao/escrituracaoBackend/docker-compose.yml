@@ -1,6 +1,7 @@
 version: '3.5'
     
 services:
+  
   db:
     image: mongo:3.4
   escrituracao-backend:
@@ -10,9 +11,13 @@ services:
     ports:
       - 7270:7270
     command: bash -c "cd /backend && npm i && npm start"
+
   notas-backend:
    image: jamesdbloom/mockserver:mockserver-5.5.1
    ports:
-   - 7271:1080
+   - 7271:7271
    environment:
    - LOG_LEVEL=INFO
+   volumes: 
+    - ./notasmock:/tmp/notasmock
+   command: bash -c "/opt/mockserver/run_mockserver.sh -serverPort 7271 -logLevel INFO -jvmOptions "-Dmockserver.propertyFile='/tmp/notasmock/mockserver.properties'""

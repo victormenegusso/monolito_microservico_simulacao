@@ -19,7 +19,7 @@ const escriturar = async (cnpj) => {
   lancamentos.map(lc => lc.remove())
 
   // escritura as notas
-  return await axios.get(`http://notas-backend:7171/api/notas/${cnpj}`)
+  return await axios.get(`http://notas-backend:7271/api/notas/${cnpj}`)
     .then(response => {
       const notas = response.data
 

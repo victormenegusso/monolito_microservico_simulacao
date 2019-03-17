@@ -1,0 +1,46 @@
+[
+  {
+    "httpRequest": {
+      "path": "/api/notas/?"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "content-type": ["application/json"]
+      },
+      "body": "[\r\n    {\r\n        \"_id\": \"5c8c5e4651106e0027093db5\",\r\n        \"numero\": 1,\r\n        \"cnpj\": \"123451\",\r\n        \"valor\": 23000,\r\n        \"__v\": 0\r\n    },\r\n    {\r\n        \"_id\": \"5c8c5e5651106e0027093db7\",\r\n        \"numero\": 2,\r\n        \"cnpj\": \"123451\",\r\n        \"valor\": 98,\r\n        \"__v\": 0\r\n    },\r\n    {\r\n        \"_id\": \"5c8c5e6651106e0027093dba\",\r\n        \"numero\": 1,\r\n        \"cnpj\": \"245987\",\r\n        \"valor\": 778,\r\n        \"__v\": 0\r\n    }\r\n]"
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/api/notas/123451"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "content-type": ["application/json"]
+      },
+      "body": "[\r\n    {\r\n        \"_id\": \"5c8c5e4651106e0027093db5\",\r\n        \"numero\": 1,\r\n        \"cnpj\": \"123451\",\r\n        \"valor\": 23000,\r\n        \"__v\": 0\r\n    },\r\n    {\r\n        \"_id\": \"5c8c5e5651106e0027093db7\",\r\n        \"numero\": 2,\r\n        \"cnpj\": \"123451\",\r\n        \"valor\": 98,\r\n        \"__v\": 0\r\n    }\r\n]"
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/api/notas/245987"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "content-type": ["application/json"]
+      },
+      "body": "[\r\n    {\r\n        \"_id\": \"5c8c5e6651106e0027093dba\",\r\n        \"numero\": 1,\r\n        \"cnpj\": \"245987\",\r\n        \"valor\": 778,\r\n        \"__v\": 0\r\n    }\r\n]"
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/api/notas/987"
+    },
+    "httpResponse": {
+      "statusCode": 400
+    }
+  }
+]
