@@ -32,6 +32,8 @@ A ideia é imaginar que somos do time de escrituração e esse monolito vai ser 
 
 ### Monolito
 
+[implementação](monolito)
+
 **Arquitetura do sistema**
 
 ![Alt text](./monolito.svg)
@@ -44,6 +46,8 @@ A ideia é imaginar que somos do time de escrituração e esse monolito vai ser 
 - fácil de criar testes, especialmente os que envolvem dois contextos diferentes ( _escrituração de notas_ ).
 
 ### Micro Serviço ( sem simulador )
+
+[implementação](microservicos_sem_simulacao)
 
 **Arquitetura do sistema**
 
@@ -64,6 +68,8 @@ A ideia é imaginar que somos do time de escrituração e esse monolito vai ser 
 - Se criarmos outro serviço que deve ser escriturado, por exemplo impostos, mais um serviço a ser levantado para testar/executar a escrituração.
 
 ### Micro Serviço ( com o simulador )
+
+[implementação](microservicos_com_simulacao)
 
 **Vantagens:**
 
