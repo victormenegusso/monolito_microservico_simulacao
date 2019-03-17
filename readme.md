@@ -104,3 +104,6 @@ Durante o desenvolvimento do micro serviço de escrituração, não devemos nos 
 https://medium.com/@copyconstruct/testing-microservices-the-sane-way-9bb31d158c16
 
 http://www.mock-server.com/
+
+## Apresentação
+https://slides.com/victoraugustozagomenegusso/deck#/
