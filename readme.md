@@ -92,6 +92,7 @@ Durante o desenvolvimento do micro serviço de escrituração, não devemos nos 
 - Menos recurso de máquina utilizado.
 - Desenvolvedores da escrituração não precisam conhecer a fundo a arquitetura dos demais serviços.
 - Podemos montar os diversos cenários para teste.
+- Não precisamos mockar as chamadas HTTP para fazer testes e executar o serviço de escrituração em nossa máquina.
 
 **Desvantagens:**
 
